@@ -5,8 +5,8 @@ import yfinance as yf
 import ta
 
 # --- YAPILANDIRMA ---
-TOKEN = "7864817757:AAFTxT7Lq9eWvXw-M15FvEwUjU_Jj3Z8K80"
-CHAT_ID = "123456789"
+TOKEN = "8750264148:AAFMTyKMKocPbhwaeaj8qjmgAJfIH59hseo"
+CHAT_ID = "1684529832"
 
 BIST_30 = [
     "THYAO.IS",
