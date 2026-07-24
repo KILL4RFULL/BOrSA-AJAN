@@ -74,11 +74,16 @@ def piyasa_analizi_yap():
       ):
         hedef = round(son_kapanis * 1.12, 2)
         stop = round(son_kapanis * 0.96, 2)
-        sinyaller.append(
-            f"📈 **{hisse.replace('.IS', '')}**\n• Fiyat: {son_kapanis:.2f} TL\n•"
-            f" RSI: {son_rsi:.1f}\n• Hedef: {hedef} TL\n• Stop: {stop"
-            f} TL\n⏳ **Tahmini Vade:** 1-3 Hafta\n"
+        
+        mesaj_parcasi = (
+            f"📈 **{hisse.replace('.IS', '')}**\n"
+            f"• Fiyat: {son_kapanis:.2f} TL\n"
+            f"• RSI: {son_rsi:.1f}\n"
+            f"• Hedef: {hedef} TL\n"
+            f"• Stop: {stop} TL\n"
+            f"⏳ **Tahmini Vade:** 1-3 Hafta\n"
         )
+        sinyaller.append(mesaj_parcasi)
     except Exception as ex:
       print(f"{hisse} analiz hatası: {ex}")
 
